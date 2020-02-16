@@ -18,7 +18,13 @@ text {
 }
 
 </style>
+
+<!-- HTML content -->
+<a href="index.html">Back</a>
+<h1 style="text-align: center">Force-directed non-hierarchical chart </h1>
+<!-- value = 0 if normal, 1 if disuputed, 2 if unusual -->
 <svg width="960" height="600"></svg>
+
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -33,7 +39,7 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("./data/example.json", function(error, graph) {
+d3.json("./data/apollo.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
@@ -41,7 +47,7 @@ d3.json("./data/example.json", function(error, graph) {
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+    .attr("stroke", function(d) { return (d.value === 1 ? "#0f0" : "#000"); });
 
   var node = svg.append("g")
       .attr("class", "nodes")
@@ -50,8 +56,7 @@ d3.json("./data/example.json", function(error, graph) {
     .enter().append("g")
     
   var circles = node.append("circle")
-      .attr("r", 5)
-      .attr("fill", function(d) { return color(d.group); })
+      .attr("r", function(d) { return (d.id === "Apollo"? "10px" : "5px"); })
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
