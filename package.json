@@ -1,0 +1,19 @@
+{
+  "name": "greekgraphs-prototypes",
+  "version": "1.0.0",
+  "description": "Prototypes for the different greek graph types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yayalu/greekgraphs-prototypes.git"
+  },
+  "author": "Yaya Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yayalu/greekgraphs-prototypes/issues"
+  },
+  "homepage": "https://github.com/yayalu/greekgraphs-prototypes#readme"
+}
