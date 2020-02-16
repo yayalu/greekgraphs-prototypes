@@ -1,0 +1,50 @@
+{
+  "name": "Leto",
+  "children": [
+    {
+      "name": "Apollo",
+      "children": [
+        { "name": "Anios" },
+        { "name": "the Corybantes" },
+        { "name": "Mopsos" },
+        { "name": "Doros" },
+        { "name": "Laodocos" },
+        { "name": "Polypoites" },
+        { "name": "Miletos" },
+        { "name": "Eleuther" },
+        { "name": "Asclepios" },
+        {
+          "name": "Thaleia",
+          "children": [{ "name": "Anios" }, { "name": "the Corybantes" }]
+        },
+        {
+          "name": "Manto",
+          "children": [{ "name": "Mopsos" }]
+        },
+        {
+          "name": "Phthia",
+          "children": [
+            { "name": "Doros" },
+            { "name": "Laodocos" },
+            { "name": "Polypoites" }
+          ]
+        },
+        {
+          "name": "Areia",
+          "children": [{ "name": "Miletos" }]
+        },
+        {
+          "name": "Aithousa",
+          "children": [{ "name": "Asclepios" }]
+        },
+        {
+          "name": "Coronis",
+          "children": [{ "name": "Asclepios" }]
+        }
+      ]
+    },
+    {
+      "name": "Artemis"
+    }
+  ]
+}
