@@ -89,6 +89,17 @@ function update() {
       .style("fill", color)
       .on("click", click)
       .call(force.drag);
+
+  node.append("text")
+      .attr("class", "node")
+      .attr('x', function(d) { return d.x+6; })
+      .attr('y', function(d) { return d.x+3; })
+      .text(function(d) {
+        console.log(d.name);
+        return d.name;
+      })
+      
+
 }
 
 function tick() {
@@ -135,3 +146,4 @@ function flatten(root) {
 }
 
 </script>
+</body>
