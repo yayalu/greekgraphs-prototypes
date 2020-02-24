@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-24T10:33:33.219Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="X4j3275MgT8ELkSxaxwI" version="12.7.4" type="github" pages="4">
+<mxfile host="www.draw.io" modified="2020-02-24T10:42:23.593Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="0et2zLNTsS2nW8HPARvj" version="12.7.4" type="github" pages="4">
   <diagram id="MMezxm8C0TaXH5u5Hq_m" name="Radial tidytree">
-    <mxGraphModel dx="788" dy="499" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1395" dy="705" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -262,7 +262,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zpLSIEUbXP2ii_GwcyS6-30" value="Phthia" style="text;html=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+        <mxCell id="zpLSIEUbXP2ii_GwcyS6-30" value="Phthia" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
           <mxGeometry x="296" y="432" width="85" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zpLSIEUbXP2ii_GwcyS6-89" value="Polypoites" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
