@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <title>Greek graph prototypes</title>
+  </head>
+  <style>
+        
+        #legend-node {
+        border: 2px solid #474747;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 0.7rem;
+        width: 4rem;
+        }
+
+        #legend-unknownnode {
+        border: 2px dashed lightgrey;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 0.7rem;
+        width: 4rem;
+        }
+
+        #legend-relationedge {
+        border-bottom: 2px solid #474747;
+        padding: 1rem 1rem 0.2rem 1rem;
+        margin: 1rem;
+        font-size: 0.7rem;
+        width: 4rem;
+        }
+
+        #legend-disputededge {
+        border-bottom: 2px dotted red;
+        padding: 1rem 1rem 0.2rem 1rem;
+        margin: 1rem;
+        font-size: 0.7rem;
+        width: 4rem;
+        }
+
+        #legend-unusualedge {
+        border-bottom: 2px solid blue;
+        padding: 1rem 1rem 0.2rem 1rem;
+        margin: 1rem;
+        font-size: 0.7rem;
+        width: 4rem;
+        }
+
+    </style>
+  <body>
+    <!-- HTML content -->
+    <a href="index.html">Back</a>
+    <h1 style="text-align: center;">Linear diagrams</h1>
+    <p style="font-style: italic; text-align: center">Ex: Descendants of Apollo</p>
+    <div style="margin: 3rem 3rem 3rem 3rem; text-align: center">
+      <form name="frmRadio" id="radio-buttons" action="">
+        <input type="radio" id="radio-tidytree" name="option"
+          onclick="change(this)">Tidytree
+        <input type="radio" id="radio-dendrogram" name="option"
+          onclick="change(this)">Cluster dendrogram
+      </form>
+      <div id="heading"></div>
+      <div id="graph"></div>
+    </div>
+
+  </body>
+  <script>
+      function change(radio) { 
+          if (radio.checked && radio.id === "radio-tidytree") {
+              document.getElementById("heading").innerHTML = "<h2>Linear tidytree</h2>";
+              document.getElementById("graph").innerHTML = '<img src="./img/linear-tidytree.svg" width="40%"></img>';
+          } else {
+              document.getElementById("heading").innerHTML = "<h2>Linear cluster dendrogram</h2>";
+              document.getElementById("graph").innerHTML = '<img src="./img/linear-dendrogram.svg" width="40%"></img>';
+          }
+      }
+  </script>
+</html>
